@@ -1,2 +1,25 @@
-# MedicalKG
-This is a medical knowledge graph 
+# 医学知识库
+
+基于中国人民解放军军事科学院图书馆研发的医学类专业知识库获取实体，并从百科等平台挖掘关系，获取2916个疾病实体、1880个症状实体、4563个药品实体、32个手术实体以及82478条三元组。目前该图谱还在丰富中，将来计划覆盖大多数的医疗术语和相关关系
+
+
+## 数据格式
+
+采用json格式保存,文件中每行数据格式如下
+
+```
+{
+    'subject_entity_id': 实体ID，由雪花算法生成,
+    'subject_entity_name': 实体名,
+    'subject_entity_type': 实体类型,
+    'relation_name': 关系名,
+    'object_entity_id': 实体ID，由雪花算法生成,
+    'object_entity_name': 实体名,
+    'object_entity_type': 实体类型
+}
+
+```
+
+
+## 参考
+* [医学数据库](http://211.103.242.133:8080/)
